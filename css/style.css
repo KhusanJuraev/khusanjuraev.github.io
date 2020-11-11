@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+    background-origin: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vw;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    color: #222;
+}
+
+p {
+    color: #fff;
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+    font-weight: 300;
+    letter-spacing: .3vw;
+    font-size: .7vw;
+    background: #111;
+    padding: 0 1px 0 5px;
+    text-align: center;
+    z-index: 100;
+}
+
+section {
+    backdrop-filter: blur(.2vw);
+    border-radius: 50px;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    font-size: 2vw;
+    font-weight: 300;
+    letter-spacing: .5vw;
+}
+
+h1 {
+    font-size: 16vw;
+    font-weight: 800;
+}
+
+.counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.times {
+    margin: 1vw;
+}
+
+.counters .times .count{
+    background: #222;
+    font-size: 4vw;
+    color: #fff;
+    padding: 1vw 2vw;
+    width: 10vw;
+}
+
+.count-text {
+    font-size: 1vw;
+    background: #ffe124;
+    padding: .5vw 0;
+    font-weight: 600;
+}
+
+.settings {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    z-index: 10000;
+}
+
+.settings svg{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: #333!important;
+}
+
+.settingsBlock {
+    box-shadow: 0 0 10px #00000063;
+    position: absolute;
+    width: 430px;
+    transform: translateX(-388px);
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    top: 50px;
+}
+
+.settingsBlock.active {
+    display: block;
+}
+
+.settingsBlock .editBg {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.settingsBlock .editBg .settingsBg {
+    position: relative;
+    margin: 5px;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+
+.settingsBlock .editBg .settingsBgUrl {
+    position: relative;
+    margin: 5px;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid silver;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingsBlock .editBg .settingsBg img {
+    position: absolute;
+    transition: .2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.urlModal {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.settingsBlock .editBg .settingsBg img:hover {
+    transform: scale(1.2);
+}
+
+.btnSettings {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #00000063;
+    align-items: center;
+    background: #fff;
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
