@@ -19,7 +19,7 @@ setInterval( () => {
     let year = date.getFullYear();
 
     if (sec === 0 && min === 0 && hour === 0 && day === 0) {
-        year = 2021;
+        year = 2022;
         sec = 0
         min = 0
         hour = 0
